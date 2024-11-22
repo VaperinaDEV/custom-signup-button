@@ -1,0 +1,16 @@
+.d-header {
+  .sso-signup-button {
+    margin-left: 7px;
+    @if $hide-sso-signup-button-on-mobile == "true" {
+      .mobile-view & {
+        display: none;
+      }
+    }
+  }
+  // Hide the default signup button
+  .auth-buttons {
+    .sign-up-button {
+      display: none;
+    }
+  }
+}
